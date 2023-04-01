@@ -17,7 +17,7 @@ def ping():
     return ('pong')
 
 @app.route('/webhook',methods=['GET','POST'])
-def ping():
+def webhook():
     return ('okay')
 
 if __name__ == '__main__':
