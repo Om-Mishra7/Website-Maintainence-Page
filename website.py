@@ -16,5 +16,9 @@ def index():
 def ping():
     return ('pong')
 
+@app.route('/webhook',methods=['GET','POST'])
+def ping():
+    return ('okay')
+
 if __name__ == '__main__':
     serve(app,host='0.0.0.0',port=80)
